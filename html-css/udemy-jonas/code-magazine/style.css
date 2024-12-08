@@ -40,6 +40,41 @@ li {
     font-size: 20px;
 }
 
+/*
+.first-li {
+    font-weight: bold;
+}
+*/
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+}
+
+/*
+li:nth-child(2) {
+    color: red;
+}
+
+li:nth-child(odd) {
+    color: green;
+}
+
+li:nth-child(even) {
+    color: yellow;
+}
+*/
+
+/*
+To nie zadziała bo p nie jest pierwszym dzieckiem article tylko header
+article p:first-child {
+    color: red;
+}
+*/
+
 .related {
     list-style: none;
 }
