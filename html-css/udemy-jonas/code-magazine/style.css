@@ -109,3 +109,26 @@ aside {
     background-color: #f7f7f7;
     border: 5px solid #1098ad;
 }
+
+/* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+/* link kliknięty */
+a:visited {
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* kliknięcie w link */
+a:active {
+    background-color: black;
+    font-style: italic;
+}
