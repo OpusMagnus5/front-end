@@ -1,6 +1,8 @@
-h1, h2, h3, h4, p, li {
+/* Nie wszystkie właściwości są dziedziczone, zazwyczaj tylko te związane z tekstem */
+/* gwiazdka to uniwersalny selektor który wybiera wszystkie elementy na stronie, nie jest oparty na dziedziczeniu */
+* {
+    color: #444444;
     font-family: sans-serif;
-    color: #444;
 }
 
 h1, h2, h3 {
