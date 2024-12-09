@@ -3,6 +3,9 @@
 * {
     color: #444444;
     font-family: sans-serif;
+    /* global reset */
+    margin: 0;
+    padding: 0;
 }
 
 h1, h2, h3 {
@@ -17,14 +20,23 @@ h1 {
 
 .main-header {
     background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
 }
 
 h2 {
     font-size: 40px;
+    margin-bottom: 30px;
 }
+
+/*
+collapsing margin - gdy dwa marginesy różnych obiektów zajmują tą samą przestrzeń to jeden się zapada i widoczny jest
+tylko jeden zazwyczaj ten większy
+*/
 
 h3 {
     font-size: 30px;
+    margin-bottom: 20px;
 }
 
 h4 {
@@ -33,13 +45,28 @@ h4 {
     text-align: center;
 }
 
+.post-header {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
 p {
     font-size: 22px;
     line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
 }
 
 li {
     font-size: 20px;
+    margin-bottom: 10px;
 }
 
 /*
@@ -54,6 +81,7 @@ li:first-child {
 
 li:last-child {
     font-style: italic;
+    margin-bottom: 0;
 }
 
 /*
@@ -110,6 +138,7 @@ article header p {
 aside {
     background-color: #f7f7f7;
     border: 5px solid #1098ad;
+    padding: 50px 0;
 }
 
 /* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
