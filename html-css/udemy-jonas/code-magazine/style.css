@@ -22,6 +22,7 @@ h1 {
     background-color: #f7f7f7;
     padding: 20px 40px;
     margin-bottom: 60px;
+    height: 80px;
 }
 
 h2 {
@@ -43,6 +44,11 @@ h4 {
     font-size: 20px;
     text-transform: uppercase;
     text-align: center;
+}
+
+.post-img {
+    width: 100%;
+    height: auto;
 }
 
 .post-header {
@@ -137,8 +143,10 @@ article header p {
 
 aside {
     background-color: #f7f7f7;
-    border: 5px solid #1098ad;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
     padding: 50px 0;
+    width: 500px;
 }
 
 /* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
