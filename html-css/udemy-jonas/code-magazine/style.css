@@ -12,6 +12,13 @@
 Na elementy inline nie działają właściwości width i height oraz marginesy i padding góra dół
 */
 
+body {
+    /* względem czego odnosi się top bottom left right elementu position absolute, domyślnie jest to viewport
+       musi to być relacja rodzic - dziecko
+    */
+    position: relative;
+}
+
 h1, h2, h3 {
     color: #1098ad;
 }
@@ -25,6 +32,7 @@ h1 {
 .container {
     width: 800px;
     margin: 0 auto;
+    position: relative;
 }
 
 .main-header {
@@ -191,4 +199,14 @@ a:hover {
 a:active {
     background-color: black;
     font-style: italic;
+}
+
+.like-button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    /* pozycjonowanie absolutne, top left działa jak x, y na oknie widoku strony (viewport) nie na na całej stronie*/
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
 }
