@@ -8,6 +8,10 @@
     padding: 0;
 }
 
+/*
+Na elementy inline nie działają właściwości width i height oraz marginesy i padding góra dół
+*/
+
 h1, h2, h3 {
     color: #1098ad;
 }
@@ -27,7 +31,8 @@ h1 {
     background-color: #f7f7f7;
     padding: 20px 40px;
     margin-bottom: 60px;
-    height: 80px;
+    /* wysokość blokuje dostosowanie się elementu i wychodzą poza boks, dlatego raczej się tego nie stosuje*/
+    /*height: 80px;*/
 }
 
 h2 {
@@ -51,9 +56,20 @@ h4 {
     text-align: center;
 }
 
+/*img zachowuje sie domyślnie jako inline-block */
 .post-img {
     width: 100%;
     height: auto;
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
 }
 
 .post-header {
