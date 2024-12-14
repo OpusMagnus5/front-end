@@ -46,6 +46,7 @@ h1 {
 h2 {
     font-size: 40px;
     margin-bottom: 30px;
+    position: relative;
 }
 
 /*
@@ -68,6 +69,10 @@ h4 {
 .post-img {
     width: 100%;
     height: auto;
+}
+
+nav {
+    text-align: center;
 }
 
 nav a:link {
@@ -209,4 +214,33 @@ a:active {
     position: absolute;
     bottom: 50px;
     right: 50px;
+}
+
+/* pseudo elements */
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+p::first-line {
+
+}
+
+/* h3 + p czyli h3 i jego sąsiad p tylko będą stylowani */
+h3 + p::first-line {
+
+}
+
+/* pseudo elementy pojawiające się jaki pierwsze lub ostatnie dziecko elementu */
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
 }
