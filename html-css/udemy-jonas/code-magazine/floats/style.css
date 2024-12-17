@@ -78,6 +78,21 @@ nav {
     float: right;
 }
 
+/* dostawiamy dodatkowy element w kontenerze na którym czyścimy floats dzięki czemu wysokość się nie zapada
+   both ponieważ mamy elementy z float right i left
+*/
+.clear {
+    clear: both;
+}
+
+/* lub w taki sposób bez dodawania nowego elementu do html */
+
+.clearfix::after {
+    clear: both;
+    content: "";
+    display: block;
+}
+
 nav a:link {
     margin-right: 30px;
     margin-top: 10px;
