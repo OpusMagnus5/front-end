@@ -2,10 +2,12 @@
 /* gwiazdka to uniwersalny selektor który wybiera wszystkie elementy na stronie, nie jest oparty na dziedziczeniu */
 * {
     color: #444444;
-    font-family: sans-serif;
+
     /* global reset */
     margin: 0;
     padding: 0;
+    /* zmienia sposób wymiarowania elementów tak że podając width or height liczy ona content, padding i border */
+    box-sizing: border-box;
 }
 
 /*
@@ -17,6 +19,7 @@ body {
        musi to być relacja rodzic - dziecko
     */
     position: relative;
+    font-family: sans-serif;
 }
 
 h1, h2, h3 {
@@ -147,6 +150,7 @@ article p:first-child {
 
 .related {
     list-style: none;
+    margin-left: 0;
 }
 
 .related-author {
@@ -179,7 +183,7 @@ aside {
     background-color: #f7f7f7;
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
-    padding: 50px 0;
+    padding: 50px 40px;
     width: 500px;
 }
 
