@@ -1,0 +1,246 @@
+/* Nie wszystkie właściwości są dziedziczone, zazwyczaj tylko te związane z tekstem */
+/* gwiazdka to uniwersalny selektor który wybiera wszystkie elementy na stronie, nie jest oparty na dziedziczeniu */
+* {
+    color: #444444;
+    font-family: sans-serif;
+    /* global reset */
+    margin: 0;
+    padding: 0;
+}
+
+/*
+Na elementy inline nie działają właściwości width i height oraz marginesy i padding góra dół
+*/
+
+body {
+    /* względem czego odnosi się top bottom left right elementu position absolute, domyślnie jest to viewport
+       musi to być relacja rodzic - dziecko
+    */
+    position: relative;
+}
+
+h1, h2, h3 {
+    color: #1098ad;
+}
+
+h1 {
+    font-size: 26px;
+    text-transform: uppercase;
+    font-style: italic;
+}
+
+.container {
+    width: 800px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.main-header {
+    background-color: #f7f7f7;
+    padding: 20px 40px;
+    margin-bottom: 60px;
+    /* wysokość blokuje dostosowanie się elementu i wychodzą poza boks, dlatego raczej się tego nie stosuje*/
+    /*height: 80px;*/
+}
+
+h2 {
+    font-size: 40px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+/*
+collapsing margin - gdy dwa marginesy różnych obiektów zajmują tą samą przestrzeń to jeden się zapada i widoczny jest
+tylko jeden zazwyczaj ten większy
+*/
+
+h3 {
+    font-size: 30px;
+    margin-bottom: 20px;
+}
+
+h4 {
+    font-size: 20px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+/*img zachowuje sie domyślnie jako inline-block */
+.post-img {
+    width: 100%;
+    height: auto;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a:link {
+    margin-right: 30px;
+    margin-top: 10px;
+    display: inline-block;
+}
+
+nav a:link:last-child {
+    margin-right: 0;
+}
+
+.post-header {
+    margin-bottom: 40px;
+}
+
+article {
+    margin-bottom: 60px;
+}
+
+p {
+    font-size: 22px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+ul, ol {
+    margin-left: 50px;
+    margin-bottom: 20px;
+}
+
+li {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+/*
+.first-li {
+    font-weight: bold;
+}
+*/
+
+li:first-child {
+    font-weight: bold;
+}
+
+li:last-child {
+    font-style: italic;
+    margin-bottom: 0;
+}
+
+/*
+li:nth-child(2) {
+    color: red;
+}
+
+li:nth-child(odd) {
+    color: green;
+}
+
+li:nth-child(even) {
+    color: yellow;
+}
+*/
+
+/*
+To nie zadziała bo p nie jest pierwszym dzieckiem article tylko header
+article p:first-child {
+    color: red;
+}
+*/
+
+.related {
+    list-style: none;
+}
+
+.related-author {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*
+footer p {
+    font-size: 16px;
+}
+*/
+
+#copyright {
+    font-size: 16px;
+}
+
+/*
+article header p {
+    font-style: italic;
+}
+*/
+
+#author {
+    font-style: italic;
+    font-size: 18px;
+}
+
+aside {
+    background-color: #f7f7f7;
+    border-top: 5px solid #1098ad;
+    border-bottom: 5px solid #1098ad;
+    padding: 50px 0;
+    width: 500px;
+}
+
+/* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
+a:link {
+    color: #1098ad;
+    text-decoration: none;
+}
+
+/* link kliknięty */
+a:visited {
+    color: #1098ad;
+}
+
+a:hover {
+    color: orangered;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* kliknięcie w link */
+a:active {
+    background-color: black;
+    font-style: italic;
+}
+
+.like-button {
+    font-size: 22px;
+    padding: 20px;
+    cursor: pointer;
+    /* pozycjonowanie absolutne, top left działa jak x, y na oknie widoku strony (viewport) nie na na całej stronie*/
+    position: absolute;
+    bottom: 50px;
+    right: 50px;
+}
+
+/* pseudo elements */
+h1::first-letter {
+    font-style: normal;
+    margin-right: 5px;
+}
+
+p::first-line {
+
+}
+
+/* h3 + p czyli h3 i jego sąsiad p tylko będą stylowani */
+h3 + p::first-line {
+
+}
+
+/* pseudo elementy pojawiające się jaki pierwsze lub ostatnie dziecko elementu */
+h2::after {
+    content: "TOP";
+    background-color: #ffe70e;
+    color: #444;
+    font-size: 16px;
+    font-weight: bold;
+    display: inline-block;
+    padding: 5px 10px;
+    position: absolute;
+    top: -10px;
+    right: -25px;
+}
