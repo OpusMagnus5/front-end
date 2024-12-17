@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    width: 825px;
+    margin: 50px auto;
+}
+
+.main-article {
+    border: 5px solid black;
+}
+
+.product-name-header {
+    text-transform: uppercase;
+    text-align: center;
+    background-color: #f7f7f7;
+    font-size: 30px;
+    padding: 15px;
+    position: relative;
+}
+
+.product-name-header::before {
+    content: "SALE";
+    background-color: red;
+    color: white;
+    display: inline-block;
+    padding: 8px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    position: absolute;
+    top: -20px;
+    left: -45px;
+}
+
+.product-image {
+    width: 240px;
+    height: 240px;
+    float: left;
+    margin-right: 50px;
+}
+
+img {
+    width: 100%;
+}
+
+.info {
+    width: 240px;
+    float: left;
+}
+
+.details {
+    width: 240px;
+    float: right;
+    margin-top: 18px;
+}
+
+.price {
+    font-weight: bold;
+    font-size: 24px;
+    float: left;
+}
+
+.price-container {
+    margin-bottom: 10px;
+    margin-top: 18px;
+}
+
+.price-container::after {
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.free-shipping {
+    text-transform: uppercase;
+    color: #444444;
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 6px;
+    float: right;
+}
+
+.colors li {
+    display: inline-block;
+    padding: 12px;
+    margin-right: 10px;
+    margin-top: 30px;
+}
+
+.colors li:first-child {
+    background-color: black;
+}
+
+.colors li:first-child {
+    background-color: black;
+}
+
+.colors li:nth-child(2) {
+    background-color: blue;
+}
+
+.colors li:nth-child(3) {
+    background-color: red;
+}
+
+.colors li:nth-child(4) {
+    background-color: yellow;
+}
+
+.colors li:nth-child(5) {
+    background-color: green;
+}
+
+.colors li:last-child {
+    background-color: brown;
+}
+
+.description {
+    margin-bottom: 10px;
+    clear: both;
+}
+
+.detail-link:link {
+    color: black;
+}
+
+.detail-link:hover {
+    text-decoration: none;
+}
+
+.product-details-header {
+    text-transform: uppercase;
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+.details-list {
+    list-style: square;
+    margin-left: 20px;
+    margin-bottom: 20px;
+}
+
+.add-to-card-button {
+    width: 100%;
+    background-color: black;
+    color: white;
+    text-transform: uppercase;
+    font-size: 22px;
+    border: 1px solid black;
+    height: 60px;
+}
+
+.add-to-card-button:hover {
+    cursor: pointer;
+    background-color: white;
+    color: black;
+    border-top: 5px solid black;
+}
