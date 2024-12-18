@@ -8,6 +8,8 @@
     <style>
       .el--1 {
         background-color: blueviolet;
+        /* nadpisywanie globalnego align-items na pojedynczym elemencie */
+        align-self: flex-start;
       }
       .el--2 {
         background-color: orangered;
@@ -18,12 +20,15 @@
       }
       .el--4 {
         background-color: goldenrod;
+        align-self: stretch;
       }
       .el--5 {
         background-color: palevioletred;
       }
       .el--6 {
         background-color: steelblue;
+        /* Zmienia kolejność położenia elementu, domyślnie jest zero, mniej do zera porusza na pierwsze miejsca, a więcej o zera do przodu */
+        order: -1;
       }
       .el--7 {
         background-color: yellow;
@@ -38,7 +43,18 @@
         background-color: #ddd;
         font-size: 40px;
         margin: 40px;
+
+        /* FLEXBOX */
+        /* Elementy zajmują tyle miejsca ile zajmuje ich kontent, a wysokość dostosowują do najwyższego elementu */
+        display: flex;
+        /* sterowanie ułożeniem elementów na osi wertykalnej, domyślnie jest stretch */
+        align-items: center;
+        /* sterowanie ułożeniem elementów na osi horyzontalnej */
+        justify-content: flex-start;
+        /* miejsce pomiędzy elementami */
+        gap: 30px;
       }
+
     </style>
   </head>
   <body>
