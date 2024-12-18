@@ -13,6 +13,10 @@
       }
       .el--2 {
         background-color: orangered;
+        /* propertka która zmienia szerokość elementu zamiast stosowania width */
+        flex-basis: 200px;
+        /* pozwala na wyjście elementów poza kontener gdy to konieczne aby spełnić rozmiar */
+        flex-shrink: 0;
       }
       .el--3 {
         background-color: green;
@@ -24,6 +28,8 @@
       }
       .el--5 {
         background-color: palevioletred;
+        /* pozwala na zajęcie pozostałego miejsca w kontenerze, jest jeden ma wartość dwa razy większa to dostanie dwa razy więcej miejsca  */
+        flex-grow: 1;
       }
       .el--6 {
         background-color: steelblue;
