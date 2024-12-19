@@ -33,7 +33,7 @@ h1 {
 }
 
 .container {
-    width: 800px;
+    width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -102,7 +102,7 @@ nav a:link:last-child {
 }
 
 article {
-    margin-bottom: 60px;
+    flex: 0 0 825px;
 }
 
 p {
@@ -194,7 +194,14 @@ aside {
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
     padding: 50px 40px;
-    width: 500px;
+    flex: 0 0 300px;
+}
+
+.row {
+    display: flex;
+    gap: 75px;
+    margin-bottom: 60px;
+    align-items: flex-start;
 }
 
 /* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
