@@ -14,7 +14,6 @@
       }
       .el--3 {
         background-color: green;
-        height: 150px;
       }
       .el--4 {
         background-color: goldenrod;
@@ -42,14 +41,21 @@
         /* CSS GRID */
         display: grid;
         /* definiuje kolumny w tym przypadku 4 o takich wymiarach */
-        grid-template-columns: 250px 250px 150px 150px;
+        /* fr zajmuje tyle miejsca ile może zająć, jednostka pokazuje ile więcej od innych elementów */
+        /* auto zajmuje tyle miejsca ile potrzebne na content */
+        /*grid-template-columns: 1fr 1fr 1fr auto;*/
+        /* robi 4 kolumny o rozmiarze 1fr */
+        grid-template-columns: repeat(4, 1fr);
+        /* zajmuje wysokościo tyle ile potrzebuje chyba że nadamy wysokość kontenerowi*/
+        grid-template-rows: repeat(2, 1fr);
         /* definiuje wiersze w tym przypadku dwie o takich wymiarach */
-        grid-template-rows: 300px 200px;
+        /*grid-template-rows: 300px 200px;*/
         /* tworzy przestrzeń międxzy kolumnami */
         gap: 30px;
         /* lub osobno dla kolumn i wierszy */
         column-gap: 30px;
         row-gap: 60px;
+        height: 500px;
       }
 
       .container--2 {
