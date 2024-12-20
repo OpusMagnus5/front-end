@@ -40,9 +40,20 @@
         margin: 40px;
 
         /* CSS GRID */
+        display: grid;
+        /* definiuje kolumny w tym przypadku 4 o takich wymiarach */
+        grid-template-columns: 250px 250px 150px 150px;
+        /* definiuje wiersze w tym przypadku dwie o takich wymiarach */
+        grid-template-rows: 300px 200px;
+        /* tworzy przestrzeń międxzy kolumnami */
+        gap: 30px;
+        /* lub osobno dla kolumn i wierszy */
+        column-gap: 30px;
+        row-gap: 60px;
       }
 
       .container--2 {
+        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
