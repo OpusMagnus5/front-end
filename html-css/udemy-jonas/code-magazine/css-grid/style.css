@@ -41,7 +41,6 @@ h1 {
 .main-header {
     background-color: #f7f7f7;
     padding: 20px 40px;
-    margin-bottom: 60px;
     /* wysokość blokuje dostosowanie się elementu i wychodzą poza boks, dlatego raczej się tego nie stosuje*/
     /*height: 80px;*/
     display: flex;
@@ -99,10 +98,6 @@ nav a:link:last-child {
 
 .post-header {
     margin-bottom: 40px;
-}
-
-article {
-    flex: 0 0 825px;
 }
 
 p {
@@ -194,14 +189,6 @@ aside {
     border-top: 5px solid #1098ad;
     border-bottom: 5px solid #1098ad;
     padding: 50px 40px;
-    flex: 0 0 300px;
-}
-
-.row {
-    display: flex;
-    gap: 75px;
-    margin-bottom: 60px;
-    align-items: flex-start;
 }
 
 /* Stylowanie linków, link targetuje na elementy <a> które mają atrybut href */
@@ -286,4 +273,29 @@ h2::after {
     font-style: normal;
     margin-bottom: 5px;
     display: inline-block;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    column-gap: 75px;
+    row-gap: 60px;
+    align-items: start;
+}
+
+.main-header {
+    grid-column: 1 / -1;
+}
+
+article {
+
+}
+
+aside {
+
+}
+
+footer {
+    grid-column: 1 / -1;
+    align-self: center;
 }
