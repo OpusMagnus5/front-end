@@ -37,6 +37,10 @@
       }
       .el--7 {
         background-color: yellow;
+        /* override aligning item in track vertically */
+        align-self: end;
+        /* override aligning item in track horizontally */
+        justify-self: end;
       }
       .el--8 {
         background-color: crimson;
@@ -73,7 +77,6 @@
       }
 
       .container--2 {
-        display: none;
         /* STARTER */
         font-family: sans-serif;
         background-color: black;
@@ -84,6 +87,17 @@
         height: 600px;
 
         /* CSS GRID */
+        display: grid;
+        grid-template-columns: 125px 200px 125px;
+        grid-template-rows: 250px 100px;
+        /* aligning tracks in container horizontally */
+        justify-content: center;
+        /* aligning tracks in container vertically */
+        align-content: center;
+        /* aligning items in tracks vertically */
+        align-items: center;
+        /* aligning items in tracks horizontally */
+        justify-items: center;
       }
     </style>
   </head>
