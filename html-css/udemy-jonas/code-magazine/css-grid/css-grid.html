@@ -11,6 +11,17 @@
       }
       .el--2 {
         background-color: orangered;
+        /* rozciągnięcie elementu na dwie kolumny */
+        /*grid-column: 1 / 3;
+        grid-row: 2;*/
+        /* lub używamy span czyli ile ma zająć */
+        grid-column: 1 / span 2;
+        grid-row: 2;
+
+        /* możemy dać też -1 aby rozciągało się do końca bo każdy grid line ma dwa numery jeden dodatni i ujemny
+        grid-column: 1 / -1;
+        grid-row: 2;
+        */
       }
       .el--3 {
         background-color: green;
@@ -29,6 +40,9 @@
       }
       .el--8 {
         background-color: crimson;
+        /* definiowanie położenia elementu od grid line do grid line, możemy podawać tylko liczbę startową jeśli zajmuje tylko jedno miejsce */
+        grid-column: 2 / 3;
+        grid-row: 1;
       }
 
       .container--1 {
