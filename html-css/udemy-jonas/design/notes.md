@@ -50,3 +50,38 @@ Serif examples: Merriweather, Aleo, Playfair Display, Cormorant, Cardo, Lora
 4. Eksperymentuj z wielkimi literami w krótkich tytułach. Niech będą małe i pogrubione oraz zmniejsz odstępy między literami.
 5. Zwykle nie należy justować tekstu.
 6. Nie wyśrodkowuj długich bloków tekstu. Małe bloki są w porządku.
+
+# Kolory
+
+## Wybór dobrego koloru
+
+1. Spraw, by główny kolor pasował do osobowości Twojej witryny.
+   * **Czerwony** przyciąga uwagę i symbolizuje siłę, pasję i podekscytowanie.
+   * **Pomarańczowy** jest mniej agresywny i przekazuje szczęście, radość i kreatywność.
+   * **Żółty** oznacza radość, jasność i inteligencję
+   * **Zielony** reprezentuje harmonię, naturę, wzrost i zdrowie
+   * **Niebieski** kojarzy się ze spokojem, wiarygodnością i profesjonalizmem
+   * **Fioletowy** oznacza bogactwo, mądrość i magię
+   * **Różowy** reprezentuje romans, troskę i uczucie
+   * **Brązowy** kojarzy się z naturą, trwałością i komfortem
+   * **Czarny** symbolizuje siłę, elegancję i minimalizm, ale także smutek i żal.
+2. Używaj dobrej tonacji kolorów! Nie wybieraj przypadkowych tonów lub kolorów nazwanych w CSS. (Open color, tailwind-css, flat ui color2)
+
+## System koloru
+
+1. W palecie kolorów potrzebne są co najmniej dwa rodzaje kolorów: kolor główny i kolor szary
+2. Wraz ze wzrostem doświadczenia możesz dodać więcej kolorów: kolory akcentujące (drugorzędne).
+3. Dla urozmaicenia można tworzyć jaśniejsze i ciemniejsze „wersje” (tailwind lub jakiś generator).
+
+## Jak używać kolorów
+
+1. Użyj głównego koloru, aby zwrócić uwagę na najważniejsze elementy na stronie.
+2. Użyj kolorów, aby dodać interesujące akcenty lub wyróżnić całe komponenty, lub sekcje.
+3. Możesz spróbować użyć swojego koloru z otaczających obrazów i ilustracji
+
+## Kolory i typografia
+
+1. Na ciemnych tłach spróbuj użyć odcienia tła („jaśniejszej wersji”) dla tekstu.
+2. Tekst zazwyczaj nie powinien być całkowicie czarny. Rozjaśnij go, gdy wygląda na ciężki i mało zachęcający.
+3. Nie rozjaśniaj tekstu! Użyj narzędzia do sprawdzania kontrastu między tekstem a kolorami tła.
+   * Współczynnik kontrastu musi wynosić co najmniej 4,5:1 dla normalnego tekstu i 3:1 dla dużego tekstu (18px+) - użyj narzędzia
