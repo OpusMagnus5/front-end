@@ -85,3 +85,32 @@ Serif examples: Merriweather, Aleo, Playfair Display, Cormorant, Cardo, Lora
 2. Tekst zazwyczaj nie powinien być całkowicie czarny. Rozjaśnij go, gdy wygląda na ciężki i mało zachęcający.
 3. Nie rozjaśniaj tekstu! Użyj narzędzia do sprawdzania kontrastu między tekstem a kolorami tła.
    * Współczynnik kontrastu musi wynosić co najmniej 4,5:1 dla normalnego tekstu i 3:1 dla dużego tekstu (18px+) - użyj narzędzia
+
+# Obrazy
+
+## Używaj dobrych obrazów
+
+1. Różne rodzaje obrazów: zdjęcia produktów, zdjęcia fabularne, ilustracje, wzory.
+2. Używaj obrazów, aby wspierać przekaz i historię swojej witryny. Używaj więc tylko odpowiednich obrazów!
+3. Preferuj oryginalne obrazy. Jeśli nie jest to możliwe, używaj oryginalnie wyglądających obrazów stockowych (niegenerycznych!).
+Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
+
+## Jak używać obrazów dobrze
+
+1. Spróbuj pokazać prawdziwych ludzi, aby wywołać emocje użytkownika.
+2. W razie potrzeby przytnij obrazy, aby dopasować je do wiadomości.
+3. Eksperymentuj z łączeniem zdjęć, ilustracji i wzorów
+
+## Obsługa tekstu na zdjęciach
+
+1. Przyciemnianie lub rozjaśnianie obrazu (całkowicie lub częściowo, przy użyciu gradientu)
+2. Umieść tekst w neutralnym obszarze obrazu
+3. Umieść tekst w polu
+
+## Szczegóły techniczne
+
+1. Aby uwzględnić ekrany o wysokiej rozdzielczości, wymiary obrazu powinny być 2x większe niż ich wyświetlany rozmiar.
+   * Współczynnik skali: Rzeczywista liczba pikseli na ekranie / liczba pikseli reprezentowane na ekranie
+   * Na ekranach o wysokiej rozdzielczości współczynnik skali wynosi 2x lub nawet 3x, na „normalnych” ekranach jest to tylko 1x (1 piksel fizyczny = 1 piksel projektowy)
+2. Kompresuj obrazy, aby uzyskać mniejszy rozmiar pliku i lepszą wydajność. Programy: Unsplash, Pexels, DrawKit, unDraw, Squoosh
+3. Używając wielu obrazów obok siebie, upewnij się, że mają one dokładnie takie same wymiary.
