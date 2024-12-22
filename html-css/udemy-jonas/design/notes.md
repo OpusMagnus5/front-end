@@ -114,3 +114,25 @@ Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
    * Na ekranach o wysokiej rozdzielczości współczynnik skali wynosi 2x lub nawet 3x, na „normalnych” ekranach jest to tylko 1x (1 piksel fizyczny = 1 piksel projektowy)
 2. Kompresuj obrazy, aby uzyskać mniejszy rozmiar pliku i lepszą wydajność. Programy: Unsplash, Pexels, DrawKit, unDraw, Squoosh
 3. Używając wielu obrazów obok siebie, upewnij się, że mają one dokładnie takie same wymiary.
+
+# Ikony
+
+## Używaj dobrych ikon
+
+1. Użyj dobrego pakietu ikon, istnieje mnóstwo darmowych i płatnych pakietów ikon. (Phosphor icons, ionicons, icons8)
+2. Używaj tylko jednego pakietu ikon. Nie mieszaj ikon z różnych pakietów ikon.
+3. Używaj ikon SVG lub czcionek ikon. Nie używaj formatów obrazów bitmapowych (.jpg i .png)!
+4. Dostosuj się do osobowości strony! Okrągłość, waga i wypełnienie/obrys zależą od typografii.
+
+## Kiedy używać ikon
+
+1. Użyj ikon, aby zapewnić wizualną pomoc dla tekstu
+2. Używaj ikon dla bloków funkcji produktu.
+3. Używaj ikon powiązanych z działaniami i oznaczaj je (chyba że nie ma miejsca lub ikona jest w 100% wyraźna).
+4. Używaj ikon jako punktorów listy.
+
+## Jak używać dobrze ikon
+
+1. Aby zachować neutralność ikon, użyj tego samego koloru co tekst. Aby przyciągnąć więcej uwagi, użyj innego koloru.
+2. Nie dezorientuj użytkowników: ikony muszą mieć sens i pasować do tekstu lub akcji!
+3. Nie powiększaj ikon ponadto, do czego zostały zaprojektowane. W razie potrzeby zamknij je w kształcie (padding).
