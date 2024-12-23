@@ -109,6 +109,11 @@ img {
 
 /* FEATURES */
 .features-icon {
+  /* stroke kolorowanie SVG outline lub przez fill jeśli jest solid */
+  stroke: #087f5b;
+  width: 32px;
+  height: 32px;
+  margin-bottom: 16px;
 }
 
 .features-title {
@@ -172,6 +177,9 @@ h3 {
 }
 
 .chair-icon {
+  stroke: #087f5b;
+  width: 24px;
+  height: 24px;
 }
 
 .chair-price {
