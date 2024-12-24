@@ -136,3 +136,17 @@ Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
 1. Aby zachować neutralność ikon, użyj tego samego koloru co tekst. Aby przyciągnąć więcej uwagi, użyj innego koloru.
 2. Nie dezorientuj użytkowników: ikony muszą mieć sens i pasować do tekstu lub akcji!
 3. Nie powiększaj ikon ponadto, do czego zostały zaprojektowane. W razie potrzeby zamknij je w kształcie (padding).
+
+# Cienie
+
+## Używaj cieni dobrze
+
+1. Nie musisz używać cieni! Używaj ich tylko wtedy, gdy ma to sens dla osobowości strony.
+2. Używaj cieni w małych dawkach: nie dodawaj cieni do każdego elementu!
+3. Rozjaśnij cienie, nie rób ich zbyt ciemnych!
+4. Używaj małych cieni dla mniejszych elementów, które powinny się wyróżniać (aby przyciągać uwagę), przyciski, pola formularzy.
+5. Użyj średniej wielkości cieni dla większych obszarów, które powinny się nieco bardziej wyróżniać. Karty.
+6. Używaj dużych cieni dla elementów, które powinny unosić się nad interfejsem. Drop menu / navigation, float forms.
+7. Eksperymentuj ze zmianą cieni podczas interakcji myszy (kliknięcie i najechanie kursorem).
+8. Eksperymentuj z poświatami (kolorowymi cieniami).
+
