@@ -55,6 +55,8 @@ h2 {
   text-decoration: none;
   text-transform: uppercase;
   display: inline-block;
+  /* Jeśli coś jest kwadratem wystarczy dać 50% aby były zupełnie okrągłe, jeśli nie musimy wprowadzić odpowiednio wysoką wartość */
+  border-radius: 100px;
 }
 
 .btn:hover, .btn:active {
@@ -69,6 +71,10 @@ h2 {
 .btn--small {
   font-size: 14px;
   padding: 8px 12px;
+}
+
+img {
+  border-radius: 12px;
 }
 
 /* ------------------------ */
@@ -134,6 +140,8 @@ img {
   background-color: #087f5b;
   color: white;
   padding: 24px;
+  /* na zewnętrznym elemencie ustawiamy taki sam margines jak na wewnętrznym */
+  border-radius: 12px;
 }
 
 .testimonial-box {
@@ -160,6 +168,13 @@ img {
      20px jest ok dla medium size shadow.
   */
   box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.13);
+  border-radius: 12px;
+}
+
+.chair img {
+  /* zaokrąglanie konkretnej krawędzi */
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
 }
 
 .chair-box {
