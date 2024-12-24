@@ -150,3 +150,10 @@ Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
 7. Eksperymentuj ze zmianą cieni podczas interakcji myszy (kliknięcie i najechanie kursorem).
 8. Eksperymentuj z poświatami (kolorowymi cieniami).
 
+# Border-radius
+
+## Używaj border-radius dobrze
+
+1. Użyj promienia obramowania, aby zwiększyć żartobliwość i zabawę projektu, aby uczynić go mniej poważnym.
+2. Kroje pisma mają pewną okrągłość: upewnij się, że promień obramowania pasuje do tej okrągłości!
+3. Użyj promienia obramowania na przyciskach, obrazach, wokół ikon, wyróżniających się sekcji i innych elementów.
