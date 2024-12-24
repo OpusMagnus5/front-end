@@ -95,6 +95,9 @@ h1 {
   line-height: 1.1;
   /* Dla nagłówka żeby było ciaśniej i przypominało pismo naturalne */
   letter-spacing: -1px;
+
+  /* dodawanie cienia na tekście, przydatne gdy mamy tekst na obrazie */
+  /* text-shadow: 0 5px 5px rgba(0, 0, 0, 0.13); */
 }
 
 .header-text {
@@ -151,6 +154,14 @@ img {
 }
 
 /* CHAIRS */
+.chair {
+  /* Pierwsze dwie wartości to rozmiar cienia wzdłuż i w poprzek, trzecia wartość to rozmycie, czwarta wartość skaluje rozmiar cienia w górę.
+     Zwykle ustawiamy pierwszą wartość na zero aby był efekt padania światła od góry.
+     20px jest ok dla medium size shadow.
+  */
+  box-shadow: 0 20px 30px 0 rgba(0, 0, 0, 0.13);
+}
+
 .chair-box {
   padding: 24px;
 }
