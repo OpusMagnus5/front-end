@@ -157,3 +157,23 @@ Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
 1. Użyj promienia obramowania, aby zwiększyć żartobliwość i zabawę projektu, aby uczynić go mniej poważnym.
 2. Kroje pisma mają pewną okrągłość: upewnij się, że promień obramowania pasuje do tej okrągłości!
 3. Użyj promienia obramowania na przyciskach, obrazach, wokół ikon, wyróżniających się sekcji i innych elementów.
+
+# Whitespace
+
+## Dlaczego stosować whitespace
+
+1. Odpowiednia ilość białych znaków sprawia, że projekty wyglądają czysto, nowocześnie i dopracowane.
+2. Biała przestrzeń komunikuje jak różne elementy informacje są ze sobą powiązane ze sobą
+3. Biała przestrzeń implikuje niewidoczne relacje między elementami układu
+
+## Gdzie używać whitespace
+
+1. Używaj mnóstwa białych znaków między sekcjami.
+2. Używaj dużo białych znaków między grupami elementów.
+3. Używaj białych znaków między elementami.
+4. Wewnątrz grup elementów staraj się używać białych znaków zamiast linii.
+5. Im bardziej niektóre elementy (lub grupy elementów) do siebie pasują, tym bliżej siebie powinny się znajdować!
+6. Zacznij od dużej ilości białych znaków, może nawet zbyt dużej! Następnie usuń stamtąd białe znaki.
+7. Dopasuj inne wybory projektowe. Jeśli masz duży tekst lub duże ikony, potrzebujesz więcej białej przestrzeni.
+8. Wypróbuj twardą regułę, taką jak stosowanie wielokrotności 16 pikseli dla wszystkich odstępów
+
