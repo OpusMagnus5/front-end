@@ -202,4 +202,19 @@ Używamy kombinacji pozycji, rozmiaru, kolorów, odstępów, obramowań i cieni,
 2. Spróbuj uwypuklić składnik A nad składnikiem B, pomijając składnik B
 3. Na jakie elementy położyć nacisk? Referencje, sekcje wezwań do działania, wyróżnione sekcje, karty podglądu, formularze, tabele cenowe, ważne wiersze/kolumny w tabelach itp.
 
+# UX
 
+Interfejs użytkownika (UI) to wizualna prezentacja produktu. To jak interfejs graficzny wygląda i jak działa. \
+User Experience (UX) to ogólne doświadczenie użytkownika podczas interakcji z produktem.
+
+Niech wezwanie do działania będzie najbardziej widocznym elementem, a tekst będzie opisowy. \
+Używaj niebieskiego tekstu i podkreślonego tekstu tylko dla linków! \
+Animacje powinny mieć cel i być szybkie: od 200 do 500 ms. \
+W formularzach wyrównaj etykiety i pola w jednej pionowej linii, aby ułatwić skanowanie formularza. \
+Zaoferuj użytkownikom dobrą informację zwrotną na wszystkie działania: błędy formularza, powodzenie formularza itp. \
+Umieść przyciski akcji w miejscach, w których wywołają efekt.
+
+Użyj opisowego, skoncentrowanego na słowach kluczowych nagłówka na stronie głównej. Nie bądź niejasny lub fantazyjny! \
+Skutecznie zamieszczaj tylko istotne informacje! Wyeliminuj zbędne elementy i spraw, by treść była w 100% przejrzysta. \
+Używaj prostych słów! Unikaj technicznego żargonu i „mądrze brzmiących” słów. \
+Podziel długi tekst podtytułami, obrazami, cytatami blokowymi, wypunktowaniami itp.
