@@ -177,3 +177,29 @@ Strony ze zdjęciami: Unsplash, Pexels, DrawKit, unDraw.
 7. Dopasuj inne wybory projektowe. Jeśli masz duży tekst lub duże ikony, potrzebujesz więcej białej przestrzeni.
 8. Wypróbuj twardą regułę, taką jak stosowanie wielokrotności 16 pikseli dla wszystkich odstępów
 
+# Visual Hierarchy
+
+Hierarchia wizualna polega na ustaleniu, które elementy projektu są najważniejsze. \
+Hierarchia wizualna polega na zwróceniu uwagi na te najważniejsze elementy. \
+Hierarchia wizualna polega na zdefiniowaniu „ścieżki” dla użytkowników, aby poprowadzić ich przez stronę \
+Używamy kombinacji pozycji, rozmiaru, kolorów, odstępów, obramowań i cieni, aby ustanowienia znaczącej hierarchii wizualnej między elementami/komponentami.
+
+## Fundamenty hierarchii wizualnej
+
+1. Umieść ważne elementy bliżej górnej części strony, gdzie przyciągają więcej uwagi.
+2. Używaj obrazów z rozwagą, ponieważ przyciągają one wiele uwagi (większe obrazy przyciągają więcej uwagi).
+3. Białe znaki tworzą separację, więc używaj ich strategicznie, aby podkreślić elementy.
+
+### Elementy tekstowe
+
+1. W przypadku elementów tekstowych użyj rozmiaru czcionki, grubości czcionki, koloru i białych znaków, aby nadać im znaczenie.
+2. Jakie elementy tekstowe podkreślić? Tytuły, podtytuły, linki, przyciski, oceny, ikony.
+3. Można również pomniejszać znaczenie mniej ważnego tekstu, taki jak etykiety lub informacje drugorzędne/dodatkowe.
+
+### Komponenty
+
+1. Podkreślenie ważnego elementu za pomocą koloru tła, cienia lub obramowania (lub kilku).
+2. Spróbuj uwypuklić składnik A nad składnikiem B, pomijając składnik B
+3. Na jakie elementy położyć nacisk? Referencje, sekcje wezwań do działania, wyróżnione sekcje, karty podglądu, formularze, tabele cenowe, ważne wiersze/kolumny w tabelach itp.
+
+
