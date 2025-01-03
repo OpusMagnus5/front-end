@@ -38,9 +38,24 @@ Default: 1
     box-sizing: border-box;
 }
 
+html {
+    /* Domyślna wartość w przeglądarkach to 16px i żeby działa użytkownikowi zmiana wielkości czcionki musimy zmienić to w procentach na 10 px */
+    font-size: 62.5%;
+}
+
 body {
     font-family: sans-serif;
     line-height: 1;
     font-weight: 400;
     color: #555;
 }
+
+/*
+
+Zazwyczaj stosujemy to zamiast width ponieważ jak zmniejsza się viewport to zmniejsza się również element
+max-width: 1000px;
+
+REM - jeśli nie zdefiniujemy dla elementu html wielkości czcionki to 1 REM będzie brał rozmiar domyślny z przeglądarki
+więc jeśli zmienimy np dla mobile czcionkę dla html to zmienią się też wszystkie rozmiary
+najlepiej w html ustawić 10px wtedy ułatwia do kalkulacje
+*/
