@@ -7,9 +7,14 @@ FONT SIZE SYSTEM (px)
 
 - Font weights:
 Default: 400
+Medium: 500
+Semi-bold: 600
+Bold: 700
 
 - Line heights:
 Default: 1
+Small: 1.05
+Paragraph default: 1.6
 
 - SPACING SYSTEM (px)
 2 / 4 / 8 / 12 / 16 / 24 / 32 / 48 / 64 / 80 / 96 / 128
@@ -25,6 +30,7 @@ Default: 1
 --- 03 SHADOWS
 
 --- 04 BORDER RADIUS
+Default: 8px
 
 --- 05 WHITESPACE
 - SPACING SYSTEM (px)
@@ -111,6 +117,37 @@ body {
     /* height zamiast padding ponieważ chcemy zrobić sticky header */
     height: 9.6rem;
     padding: 0 4rem;
+}
+
+.main-nav-list {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 3.2rem;
+}
+
+.main-nav-link:link, .main-nav-link:visited {
+    display: inline-block;
+    text-decoration: none;
+    color: #333;
+    font-weight: 500;
+    font-size: 1.8rem;
+    transition: all 0.3s;
+}
+
+.main-nav-link:hover, .main-nav-link:active {
+    color: #cf711f;
+}
+
+.main-nav-link.nav-cta:link, .main-nav-link.nav-cta:visited {
+    padding: 1.2rem 2.4rem;
+    border-radius: 9px;
+    color: #fff;
+    background-color: #e67e22;
+}
+
+.main-nav-link.nav-cta:hover, .main-nav-link.nav-cta:active {
+    background-color: #cf711f;
 }
 
 /* --- HERO SECTION --- */
