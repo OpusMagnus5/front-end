@@ -102,6 +102,25 @@ body {
     margin-right: 1.6rem !important;
 }
 
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+    padding: 0 3.2rem;
+}
+
+.grid {
+    display: grid;
+    gap: 9.6rem;
+}
+
+.grid--2-cols {
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+    grid-template-columns: repeat(3, 1fr);
+}
+
 /* --- HEADER --- */
 
 .logo {
@@ -219,3 +238,11 @@ REM - jeśli nie zdefiniujemy dla elementu html wielkości czcionki to 1 REM bę
 więc jeśli zmienimy np dla mobile czcionkę dla html to zmienią się też wszystkie rozmiary
 najlepiej w html ustawić 10px wtedy ułatwia do kalkulacje
 */
+
+/* --- HOW SECTION --- */
+
+.section-how {
+    padding: 9.6rem 0;
+    background-color: orangered;
+}
+
