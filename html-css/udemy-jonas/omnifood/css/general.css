@@ -47,6 +47,7 @@ Default: 8px
 html {
     /* Domyślna wartość w przeglądarkach to 16px i żeby działa użytkownikowi zmiana wielkości czcionki musimy zmienić to w procentach na 10 px */
     font-size: 62.5%;
+    overflow-x: hidden;
 }
 
 body {
@@ -54,6 +55,8 @@ body {
     line-height: 1;
     font-weight: 400;
     color: #555;
+    /* Only works if there is nothing positioned in relation to body*/
+    overflow-x: hidden;
 }
 
 /* --- GENERAL STYLES --- */
