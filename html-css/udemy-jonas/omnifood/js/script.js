@@ -22,3 +22,20 @@ allLinks.forEach(link => link.addEventListener('click', event => {
         headerEl.classList.toggle("nav-open")
     }
 }));
+
+/* Sticky navigation */
+
+const sectionHeroEl = document.querySelector('.section-hero');
+const obs = new IntersectionObserver(entries => {
+    const entry = entries[0];
+    if (!entry.isIntersecting) {
+        document.body.classList.add('sticky');
+    } else if (entry.isIntersecting) {
+        document.body.classList.remove('sticky');
+    }
+}, {
+    root: null,
+    threshold: 0,
+    rootMargin: '-80px',
+})
+obs.observe(sectionHeroEl)
