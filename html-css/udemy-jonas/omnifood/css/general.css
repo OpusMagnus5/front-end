@@ -48,6 +48,7 @@ html {
     /* Domyślna wartość w przeglądarkach to 16px i żeby działa użytkownikowi zmiana wielkości czcionki musimy zmienić to w procentach na 10 px */
     font-size: 62.5%;
     overflow-x: hidden;
+    /*scroll-behavior: smooth;*/
 }
 
 body {
