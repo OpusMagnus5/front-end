@@ -70,8 +70,13 @@
                         </div>
                     </div>
                     <div class="hero-img-box">
-                        <img src="img/hero.png" class="hero-img"
-                             alt="Woman enjoying delicious meals, meals in storage container, and food bowls on a table.">
+                        <picture>
+                            <!-- przeglądarka wybiera ten który może obsłużyć -->
+                            <source srcset="img/hero.webp" type="image/webp"/>
+                            <source srcset="img/hero.png" type="image/png"/>
+                            <img src="img/hero.webp" class="hero-img"
+                                 alt="Woman enjoying delicious meals, meals in storage container, and food bowls on a table.">
+                        </picture>
                     </div>
                 </div>
             </section>
