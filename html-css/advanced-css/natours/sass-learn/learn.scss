@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+$color-primary: #f9ed69; // tworzenie zmiennej
+
+nav {
+  margin: 30px;
+  background-color: $color-primary;
+
+  li { // to jest to samo co: nav li (zagnieżdżanie)
+    display: inline-block;
+
+    &:first-child { // & jest to ścieżka selektorów na ten moment czyli - nav li:first-child
+      margin: 0;
+    }
+
+    a {
+      text-decoration: none;
+      background-color: darken($color-primary, 10%); // przyciemnia kolor
+    }
+  }
+}
