@@ -5,9 +5,33 @@
 
 $color-primary: #f9ed69; // tworzenie zmiennej
 
+@mixin clearfix { //tworzenie template kodu do incjectu - mixin
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+@mixin style-link-text($color) { //mixin może przyjmować zmienne
+  text-decoration: none;
+  text-transform: uppercase;
+  color: $color;
+}
+
+@function divide($a, $b) { //funkcje
+  @return $a / $b;
+}
+
+%btn-placeholder {
+  padding: 10px;
+}
+
 nav {
-  margin: 30px;
+  margin: divide(60, 2) * 1px;
   background-color: $color-primary;
+
+  @include clearfix; // wstawianie mixina
 
   li { // to jest to samo co: nav li (zagnieżdżanie)
     display: inline-block;
@@ -21,4 +45,9 @@ nav {
       background-color: darken($color-primary, 10%); // przyciemnia kolor
     }
   }
+}
+
+button {
+  @extend %btn-placeholder; // button dziedziczy po tym placeholderze
+  @include style-link-text($color-primary); //wstawianie mixina z przekazaniem zmiennej
 }
