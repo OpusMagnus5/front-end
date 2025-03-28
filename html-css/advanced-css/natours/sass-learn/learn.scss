@@ -51,3 +51,5 @@ button {
   @extend %btn-placeholder; // button dziedziczy po tym placeholderze
   @include style-link-text($color-primary); //wstawianie mixina z przekazaniem zmiennej
 }
+
+//  npm install sass --save-dev

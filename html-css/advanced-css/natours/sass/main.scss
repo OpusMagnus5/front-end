@@ -1,4 +1,13 @@
-@charset "UTF-8";
+//  npm install sass --save-dev
+// node-sass sass/main.scss css/styl.css - kompilacja
+
+$color-primary: #55c57a;
+$color-primary-light: #7ed56f;
+$color-primary-dark: #28b485;
+
+$color-grey-dark: #777;
+$color-white: #fff;
+
 *,
 *::after,
 *::before {
@@ -12,29 +21,38 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: 400;
   line-height: 1.7;
-  color: #777;
+  color: $color-grey-dark;
   padding: 3rem;
   box-sizing: border-box;
 }
 
 .header {
   height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-image:
+          linear-gradient(
+                          to right bottom,
+                          rgba($color-primary-light, 0.8),
+                          rgba($color-primary-dark, 0.8)
+          ),
+          url(../img/hero.jpg);
   background-size: cover;
   background-position: top;
+
   /*
   Właściwość clip-path CSS tworzy region przycinania, który określa, jaka część elementu powinna być wyświetlana.
   Części znajdujące się wewnątrz regionu są pokazywane, podczas gdy te na zewnątrz są ukryte.
   https://bennettfeely.com/clippy/ - narzędzie do robienia polygonów
   */
   clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+
   /*
   Trójkąt
   clip-path: polygon(0 100%, 50% 0, 100% 100%);
   */
+
   position: relative;
 }
 
@@ -57,8 +75,9 @@ body {
 }
 
 .heading-primary {
-  color: #fff;
+  color: $color-white;
   text-transform: uppercase;
+
   /* Przy animacjach czasami elementy minimalnie podskakują i to jest fix na to */
   backface-visibility: hidden;
   margin-bottom: 6rem;
@@ -69,9 +88,11 @@ body {
   font-size: 6rem;
   font-weight: 400;
   letter-spacing: 3.5rem;
+
   animation-name: moveInLeft;
   animation-duration: 1s;
   animation-timing-function: ease-out;
+
   /*
   Inne właściwości
   animation-delay: 3s;
@@ -84,6 +105,7 @@ body {
   font-size: 2rem;
   font-weight: 700;
   letter-spacing: 1.75rem;
+
   animation: moveInRight 1s ease-out;
 }
 
@@ -92,37 +114,46 @@ body {
     opacity: 0;
     transform: translateX(-10rem);
   }
+
   80% {
     transform: translateX(1rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
+
 @keyframes moveInRight {
   0% {
     opacity: 0;
     transform: translateX(10rem);
   }
+
   80% {
     transform: translateX(2rem);
   }
+
   100% {
     opacity: 1;
     transform: translateX(0);
   }
 }
+
 @keyframes moveInBottom {
   0% {
     opacity: 0;
     transform: translateY(3rem);
   }
+
   100% {
     opacity: 1;
     transform: translateY(0);
   }
 }
+
 .btn:link, .btn:visited {
   text-transform: uppercase;
   text-decoration: none;
@@ -146,11 +177,12 @@ body {
 }
 
 .btn--white {
-  background-color: #fff;
-  color: #777;
+  background-color: $color-white;
+  color: $color-grey-dark;
 }
 
 /* animacja przycisku za pomocą after */
+
 .btn::after {
   content: "";
   display: inline-block;
@@ -165,7 +197,7 @@ body {
 }
 
 .btn--white::after {
-  background-color: #fff;
+  background-color: $color-white;
 }
 
 .btn:hover::after {
@@ -174,12 +206,10 @@ body {
 }
 
 .btn--animated {
-  animation: moveInBottom 0.5s ease-out 0.75s;
+  animation: moveInBottom .5s ease-out .75s;
   /*
   opóźnienie sprawia że przycisk jest nadal przez moment widoczny, ta propertka sprawia że element od razu
   przyjmuje ustawienia z keyframe 0%
   */
   animation-fill-mode: backwards;
 }
-
-/*# sourceMappingURL=style.css.map */
