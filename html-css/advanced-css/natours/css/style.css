@@ -12,74 +12,7 @@ html {
 }
 
 body {
-  font-family: "Lato", sans-serif;
-  font-weight: 400;
-  line-height: 1.7;
-  color: #777;
-  padding: 3rem;
   box-sizing: border-box;
-}
-
-.header {
-  height: 95vh;
-  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
-  background-size: cover;
-  background-position: top;
-  /*
-  Właściwość clip-path CSS tworzy region przycinania, który określa, jaka część elementu powinna być wyświetlana.
-  Części znajdujące się wewnątrz regionu są pokazywane, podczas gdy te na zewnątrz są ukryte.
-  https://bennettfeely.com/clippy/ - narzędzie do robienia polygonów
-  */
-  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
-  /*
-  Trójkąt
-  clip-path: polygon(0 100%, 50% 0, 100% 100%);
-  */
-  position: relative;
-}
-.header__logo-box {
-  position: absolute;
-  top: 4rem;
-  left: 4rem;
-}
-.header__logo {
-  height: 3.5rem;
-}
-.header__text-box {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  text-align: center;
-}
-
-.heading-primary {
-  color: #fff;
-  text-transform: uppercase;
-  /* Przy animacjach czasami elementy minimalnie podskakują i to jest fix na to */
-  backface-visibility: hidden;
-  margin-bottom: 6rem;
-}
-.heading-primary--main {
-  display: block;
-  font-size: 6rem;
-  font-weight: 400;
-  letter-spacing: 3.5rem;
-  animation-name: moveInLeft;
-  animation-duration: 1s;
-  animation-timing-function: ease-out;
-  /*
-  Inne właściwości
-  animation-delay: 3s;
-  animation-iteration-count: 3;
-  */
-}
-.heading-primary--sub {
-  display: block;
-  font-size: 2rem;
-  font-weight: 700;
-  letter-spacing: 1.75rem;
-  animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
@@ -118,6 +51,43 @@ body {
     transform: translateY(0);
   }
 }
+.heading-primary {
+  color: #fff;
+  text-transform: uppercase;
+  /* Przy animacjach czasami elementy minimalnie podskakują i to jest fix na to */
+  backface-visibility: hidden;
+  margin-bottom: 6rem;
+}
+.heading-primary--main {
+  display: block;
+  font-size: 6rem;
+  font-weight: 400;
+  letter-spacing: 3.5rem;
+  animation-name: moveInLeft;
+  animation-duration: 1s;
+  animation-timing-function: ease-out;
+  /*
+  Inne właściwości
+  animation-delay: 3s;
+  animation-iteration-count: 3;
+  */
+}
+.heading-primary--sub {
+  display: block;
+  font-size: 2rem;
+  font-weight: 700;
+  letter-spacing: 1.75rem;
+  animation: moveInRight 1s ease-out;
+}
+
+body {
+  font-family: "Lato", sans-serif;
+  font-weight: 400;
+  line-height: 1.7;
+  color: #777;
+  padding: 3rem;
+}
+
 .btn {
   /* animacja przycisku za pomocą after */
 }
@@ -170,6 +140,39 @@ body {
   przyjmuje ustawienia z keyframe 0%
   */
   animation-fill-mode: backwards;
+}
+
+.header {
+  height: 95vh;
+  background-image: linear-gradient(to right bottom, rgba(126, 213, 111, 0.8), rgba(40, 180, 133, 0.8)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: top;
+  /*
+  Właściwość clip-path CSS tworzy region przycinania, który określa, jaka część elementu powinna być wyświetlana.
+  Części znajdujące się wewnątrz regionu są pokazywane, podczas gdy te na zewnątrz są ukryte.
+  https://bennettfeely.com/clippy/ - narzędzie do robienia polygonów
+  */
+  clip-path: polygon(0 0, 100% 0, 100% 75vh, 0 100%);
+  /*
+  Trójkąt
+  clip-path: polygon(0 100%, 50% 0, 100% 100%);
+  */
+  position: relative;
+}
+.header__logo-box {
+  position: absolute;
+  top: 4rem;
+  left: 4rem;
+}
+.header__logo {
+  height: 3.5rem;
+}
+.header__text-box {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */
