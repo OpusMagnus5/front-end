@@ -4,7 +4,6 @@
 // budowa grid za pomocą float
 .row {
     max-width: variables.$grid-width;
-    background-color: #eee;
     margin: 0 auto;
 
     // wybiera wszystko oprócz ostatniego dziecka - not zaprzecza
@@ -16,7 +15,6 @@
 
     // ^= takie które zaczynają się na, *= takie które zawierają
     [class^=col-] {
-        background-color: orangered;
         float: left;
 
         &:not(:last-child) {
