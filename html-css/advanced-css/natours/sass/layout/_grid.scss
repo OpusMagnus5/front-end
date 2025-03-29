@@ -1,0 +1,50 @@
+@use "../abstracts/variables";
+@use "../abstracts/mixins";
+
+// budowa grid za pomocą float
+.row {
+    max-width: variables.$grid-width;
+    background-color: #eee;
+    margin: 0 auto;
+
+    // wybiera wszystko oprócz ostatniego dziecka - not zaprzecza
+    &:not(:last-child) {
+         margin-bottom: variables.$gutter-vertical;
+    }
+
+    @include mixins.clearfix;
+
+    // ^= takie które zaczynają się na, *= takie które zawierają
+    [class^=col-] {
+        background-color: orangered;
+        float: left;
+
+        &:not(:last-child) {
+            margin-right: variables.$gutter-horizontal;
+        }
+    }
+
+    .col-1-of-2 {
+        width: calc((100% - #{variables.$gutter-horizontal}) / 2);
+    }
+
+    .col-1-of-3 {
+        width: calc((100% - 2 * #{variables.$gutter-horizontal}) / 3);
+    }
+
+    .col-1-of-4 {
+        width: calc((100% - 3 * #{variables.$gutter-horizontal}) / 4);
+    }
+
+    .col-2-of-3 {
+        width: calc((100% - 2 * #{variables.$gutter-horizontal}) / 3 * 2 + #{variables.$gutter-horizontal});
+    }
+
+    .col-2-of-4 {
+        width: calc((100% - 3 * #{variables.$gutter-horizontal}) / 4 * 2 + #{variables.$gutter-horizontal});
+    }
+
+    .col-3-of-4 {
+        width: calc((100% - 3 * #{variables.$gutter-horizontal}) / 4 * 3 + (2 * #{variables.$gutter-horizontal}));
+    }
+}
