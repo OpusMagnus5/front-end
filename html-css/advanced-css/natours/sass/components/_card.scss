@@ -1,0 +1,44 @@
+@use "../abstracts/variables";
+
+.card {
+    // przybliża obiekt sprawia wrażenie perspektywy, trzeba eksperymentować z wartością, zazwyczaj duże
+    perspective: 150rem;
+    position: relative;
+    height: 50rem;
+
+    &__side {
+        height: 50rem;
+        font-size: 2rem;
+        color: white;
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all .8s ease;
+        width: 100%;
+        // ukrywa to co jest za elementem
+        backface-visibility: hidden;
+        border-radius: 3px;
+        box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, .15);
+
+        &--fron {
+            background-color: variables.$color-white;
+        }
+
+        &--back {
+            background-color: green;
+            transform: rotateY(180deg);
+
+            &-1 {
+                background-image: linear-gradient(to right bottom, variables.$color-secondary-light, variables.$color-secondary-dark);
+            }
+        }
+    }
+
+    &:hover &__side--front {
+        transform: rotateY(180deg);
+    }
+
+    &:hover &__side--back {
+        transform: rotateY(0);
+    }
+}
