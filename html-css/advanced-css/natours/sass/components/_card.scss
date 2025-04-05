@@ -16,7 +16,7 @@
         width: 100%;
         // ukrywa to co jest za elementem
         backface-visibility: hidden;
-        border-radius: 3px;
+        border-radius: variables.$default-border-radius;
         box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, .15);
         overflow: hidden;
 

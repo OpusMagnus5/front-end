@@ -5,7 +5,7 @@
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(variables.$color-black, .1);
     background-color: rgba(variables.$color-white, .6);
-    border-radius: 3px;
+    border-radius: variables.$default-border-radius;
     padding: 6rem;
     padding-left: 9rem;
     font-size: variables.$default-font-size;
