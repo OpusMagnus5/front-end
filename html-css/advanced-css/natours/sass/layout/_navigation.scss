@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .navigation {
     &__checkbox {
@@ -45,10 +46,7 @@
     }
 
     &__list {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include mixins.absCenter;
         list-style: none;
         text-align: center;
         width: 100%;

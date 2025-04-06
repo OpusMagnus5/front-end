@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .card {
     // przybliża obiekt sprawia wrażenie perspektywy, trzeba eksperymentować z wartością, zazwyczaj duże
@@ -130,10 +131,7 @@
     }
 
     &__cta {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translate(-50%, -50%);
+        @include mixins.absCenter;
         width: 90%;
         text-align: center;
     }
