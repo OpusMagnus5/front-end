@@ -1,4 +1,5 @@
 @use "../abstracts/variables";
+@use "../abstracts/mixins";
 
 .feature-box {
     background-color: rgba(variables.$color-white, .8);
@@ -9,6 +10,10 @@
     box-shadow: 0 1.5rem 4rem rgba(variables.$color-black, .15);
     transition: transform .3s;
 
+    @include mixins.respond(tab-port) {
+        padding: 2rem;
+    }
+
     &__icon {
         display: inline-block;
         font-size: 6rem;
@@ -16,6 +21,10 @@
         margin-bottom: .5rem;
         background-image: linear-gradient(to right, variables.$color-primary-light, variables.$color-primary-dark);
         background-clip: text;
+
+        @include mixins.respond(tab-port) {
+            margin-bottom: 0;
+        }
     }
 
     &:hover {
