@@ -9,9 +9,20 @@
                           rgba(variables.$color-primary-light, 0.8),
                           rgba(variables.$color-primary-dark, 0.8)
           ),
-          url(../img/hero.jpg);
+          url(../img/hero-small.jpg);
   background-size: cover;
   background-position: top;
+
+  // przecinek to lub
+  @media (min-resolution: 192dpi) and (min-width: 37.5em), (min-width: 125em) {
+    background-image:
+            linear-gradient(
+                            to right bottom,
+                            rgba(variables.$color-primary-light, 0.8),
+                            rgba(variables.$color-primary-dark, 0.8)
+            ),
+            url(../img/hero.jpg);
+  }
 
   /*
   Właściwość clip-path CSS tworzy region przycinania, który określa, jaka część elementu powinna być wyświetlana.
