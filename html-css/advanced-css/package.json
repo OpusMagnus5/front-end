@@ -3,12 +3,21 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "sass natours/sass/main.scss natours/css/style.css -w"
+    "watch:sass": "sass natours/sass/main.scss natours/css/style.css -w",
+    "compile:sass": "sass natours/sass/main.scss natours/css/style.comp.css",
+    "concat:css": "concat -o natours/css/style.concat.css natours/icon-font.css natours/css/style.comp.css",
+    "prefix:css": "postcss --use autoprefixer -b 'last 10 versions' natours/css/style.concat.css -o natours/css/style.prefix.css",
+    "compress:css": "sass natours/css/style.prefix.css natours/css/style.css --style=compressed",
+    "build:css": "npm-run-all compile:sass concat:css prefix:css compress:css"
   },
   "author": "",
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "autoprefixer": "^10.4.21",
+    "concat": "^1.0.3",
+    "npm-run-all": "^4.1.5",
+    "postcss-cli": "^11.0.1",
     "sass": "^1.86.0"
   }
 }
