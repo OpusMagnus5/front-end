@@ -152,7 +152,8 @@
         font-weight: 100;
     }
 
-    @include mixins.respond(tab-port) {
+    // only screen and (hover: none) media zaczyna działać tez jeśli urzadzenie nie wspiera stanu hover (mobilne)
+    @media only screen and (max-width: 56.25em), only screen and (hover: none) {
         height: auto;
         border-radius: variables.$default-border-radius;
         background-color: variables.$color-white;
