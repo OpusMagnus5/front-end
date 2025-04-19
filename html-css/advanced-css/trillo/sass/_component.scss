@@ -2,7 +2,7 @@
 
 .logo {
     height: 3.25rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
 }
 
 /* SEARCH */
@@ -64,29 +64,54 @@
 
 /* USER NAVIGATION*/
 .user-nav {
-    &__icon-box {
+    display: flex;
+    align-self: stretch;
 
+    & > * {
+        padding: 0 2rem;
+        cursor: pointer;
+    }
+
+    & > *:hover {
+        background-color: var(--color-grey-light-2);
+    }
+
+    &__icon-box {
+        display: flex;
+        align-items: center;
+        position: relative;
     }
 
     &__icon {
         height: 2.25rem;
         width: 2.25rem;
+        fill: var(--color-grey-dark-2);
     }
 
     &__notification {
+        font-size: .8rem;
+        height: 1.75rem;
+        width: 1.75rem;
+        border-radius: 50%;
+        background-color: var(--color-primary);
+        color: #fff;
+        position: absolute;
+        top: 1.5rem;
+        right: 1.1rem;
 
+        display: flex;
+        align-items: center;
+        justify-content: center;
     }
 
     &__user {
-
+        display: flex;
+        align-items: center;
     }
 
     &__user-photo {
         height: 3.75rem;
         border-radius: 50%;
-    }
-
-    &__user-name {
-
+        margin-right: 1rem;
     }
 }
