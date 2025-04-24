@@ -20,6 +20,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+
+    @media only screen and (max-width: base.$bp-smallest) {
+        flex-wrap: wrap;
+        height: 12rem;
+        align-content: space-around;
+    }
 }
 
 .content {
@@ -55,6 +61,10 @@
     @media only screen and (max-width: base.$bp-medium) {
         padding: 3rem;
         gap: 3rem;
+    }
+
+    @media only screen and (max-width: base.$bp-small) {
+        flex-direction: column;
     }
 }
 
